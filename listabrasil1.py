@@ -1,3 +1,73 @@
+print('1. Faça um Programa que mostre a mensagem Alo mundo na tela.')
+
+print('Alo Mundo!')
+
+print("----------------------------------------------------------------------------------------------------------------------------")
+
+print('2. Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número].')
+
+numero = int(input("Digite um número:"))
+
+print("O número informado foi:" + str(numero))
+
+print("----------------------------------------------------------------------------------------------------------------------------")
+
+print('3. Faça um Programa que peça dois números e imprima a soma.')
+
+numero1= int(input("Digite um número:"))
+numero2= int(input("Digite um número:"))
+print(numero1 + numero2)
+
+print("----------------------------------------------------------------------------------------------------------------------------")
+
+print("4. Faça um Programa que peça as 4 notas bimestrais e mostre a média.")
+
+nota1= int(input("Digite um número:"))
+nota2= int(input("Digite um número:"))
+nota3= int(input("Digite um número:"))
+nota4= int(input("Digite um número:"))
+print((nota1+nota2+nota3+nota4)/4)
+
+print("----------------------------------------------------------------------------------------------------------------------------")
+
+
+print("5. Faça um Programa que converta metros para centímetros.")
+
+metro = int(input("Digite um número:"))
+print(metro * 100)
+
+print("----------------------------------------------------------------------------------------------------------------------------")
+
+
+print("6.Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.")
+
+raio = int(input("Digite o Raio:"))
+pi = 3.14
+print((raio*raio)*pi)
+
+print("----------------------------------------------------------------------------------------------------------------------------")
+
+print("7.Faça um Programa que calcule a área de um quadrado,em seguida mostre o dobro desta área para o usuário.")
+
+ladoa = float(input("Digite o valor do lado A:"))
+ladob = float(input("Digite o valor do lado B:"))
+result= ((ladoa*ladob)**2)
+print(result)
+
+print("----------------------------------------------------------------------------------------------------------------------------")
+
+print("8. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.")
+
+valorhora= float(input("Digite o valor da sua hora:"))
+quanthoras= int(input("Digite a quantidade de horas trabalhadas no mês:"))
+print("O total do seu salário é R$ " + str(valorhora*quanthoras))
+
+print("----------------------------------------------------------------------------------------------------------------------------")
+
+print("9. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.")
+
+
+
 print("10.Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit.")
 
 tempcel= float(input("Digite a temperatura em graus Celsius:"))
@@ -84,6 +154,32 @@ print("A quantidade de latas a ser comprada é: ", totlatas )
 print("O valor total da compra é: ", totlatas * 80)
 
 print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
+print("16. Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.")
+
+metros= float(input("Digite a quantidade de M2 a ser pintada: "))
+
+cobertura = ((metros / 6.0) * 0,10) #6.0 é igual capacidade de um litro de tinta.
+
+latas = float(cobertura / 18.0)
+
+galao = float(cobertura / 3.6)
+
+quantilatas = int(cobertura / 18.0)
+quantigalao = int(galao / 3.6)
+if( cobertura % 18.0 != 0 ):
+    totlatas = latas + 1
+if(cobertura % 3.6 != 0):
+    totgalao = galao + 1
+
+
+print("A quantidade de latas a ser comprada é: ", totlatas )
+print("A quantidade de galões a ser comprada é: ", totgalao )
+print("O valor total da compra é: ", totlatas * 80)
+print("O valor total da compra é R$: ", totgalao * 25)
+
+print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
 
 print("17. Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00 ou em galões de 3,6 litros, que custam R$ 25,00. Informe ao usuário as quantidades de tinta a serem compradas e os respectivos preços em 3 situações: comprar apenas latas de 18 litros; comprar apenas galões de 3,6 litros; misturar latas e galões, de forma que o  desperdício de tinta seja menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.")
 
