@@ -64,8 +64,11 @@ print("O total do seu salário é R$ " + str(valorhora*quanthoras))
 
 print("----------------------------------------------------------------------------------------------------------------------------")
 
-print("9. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.")
+print("9. Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius. C = 5 * ((F-32) / 9).")
 
+temp= int(input("Digite a temperatura em Fahrenheit"))
+
+print('A temperatura convertida para Celsius é: ', ((temp - 32)/ 1.8))
 
 
 print("10.Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit.")
@@ -154,32 +157,6 @@ print("A quantidade de latas a ser comprada é: ", totlatas )
 print("O valor total da compra é: ", totlatas * 80)
 
 print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-
-print("16. Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.")
-
-metros= float(input("Digite a quantidade de M2 a ser pintada: "))
-
-cobertura = ((metros / 6.0) * 0,10) #6.0 é igual capacidade de um litro de tinta.
-
-latas = float(cobertura / 18.0)
-
-galao = float(cobertura / 3.6)
-
-quantilatas = int(cobertura / 18.0)
-quantigalao = int(galao / 3.6)
-if( cobertura % 18.0 != 0 ):
-    totlatas = latas + 1
-if(cobertura % 3.6 != 0):
-    totgalao = galao + 1
-
-
-print("A quantidade de latas a ser comprada é: ", totlatas )
-print("A quantidade de galões a ser comprada é: ", totgalao )
-print("O valor total da compra é: ", totlatas * 80)
-print("O valor total da compra é R$: ", totgalao * 25)
-
-print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-
 
 print("17. Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00 ou em galões de 3,6 litros, que custam R$ 25,00. Informe ao usuário as quantidades de tinta a serem compradas e os respectivos preços em 3 situações: comprar apenas latas de 18 litros; comprar apenas galões de 3,6 litros; misturar latas e galões, de forma que o  desperdício de tinta seja menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.")
 
