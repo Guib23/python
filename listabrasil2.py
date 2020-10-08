@@ -179,10 +179,42 @@ print ("Novo Salario:", novoSal)
 
 print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
 
-print("11. As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contraram para desenvolver o programa que calculará os reajustes.")
+print("12 Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são do Imposto de Renda, que depende do salário bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% do Salário Bruto, mas não é descontado (é a empresa que deposita). O Salário Líquido corresponde ao Salário Bruto menos os descontos. O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.")
 
+hora=float(input("Digite o valor recebido por hora trabalhada R$: "))
 
+quanthoras=float(input("Digite a quantidade de horas trabalhadas R$: "))
 
+salbruto= hora * quanthoras
+
+if (salbruto <= 1500):
+    desc = 5
+elif(salbruto <= 2500):
+    desc = 10
+elif(salbruto > 2500):
+    desc = 20
+elif(salbruto == 900):
+    print("ISENTO")
+
+ir = salbruto * (desc / 100)
+
+sindi = salbruto * (3/100)
+
+fgts = salbruto * (11 / 100.0)
+
+inss = salbruto * (10 / 100.0)
+
+totdesc = salbruto - ir - sindi - fgts
+
+liqui = salbruto - totdesc
+
+print ("Salário bruto:", salbruto)
+print ("Salário com desconto de IR:", ir)
+print ("Salário com desconto de INSS:", inss)
+print ("Salário com desconto de FGTS:", fgts)
+print ("Salário com desconto do Sindicato:", sindi)
+print ("Salário com desconto do Sindicato:", totdesc)
+print ("Salário Liquido:", liqui)
 
 
 
